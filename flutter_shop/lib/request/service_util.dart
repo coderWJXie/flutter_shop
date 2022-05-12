@@ -8,7 +8,7 @@ import '../config/service_url.dart';
 // dart不要求方法必须写在函数内部
 Future getHomePageContent() async {
   try {
-    print('开始获取首页数据...');
+    // print('开始获取首页数据...');
     // 1.设置相关属性
     Dio dio = Dio();
     // as - 强制类型转换
@@ -24,6 +24,6 @@ Future getHomePageContent() async {
       throw Exception('后端接口出现异常');
     }
   } catch (e) {
-    return print('ERROR ==== $e');
+    // return print('ERROR ==== $e');
   }
 }

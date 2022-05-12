@@ -48,9 +48,9 @@ class _AdPageState extends State<AdPage> {
             // FIXME - const的用法
             children: const [
               Text(
-                '欢迎来到典典的小卖部',
+                '在线商城',
                 style: TextStyle(
-                  color: Colors.pink,
+                  color: Colors.orange,
                   fontSize: 18.0,
                   fontWeight: FontWeight.bold
                 )

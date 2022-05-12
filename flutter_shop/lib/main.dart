@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '典典小卖部',
+      title: 'flutter mall',
       // 去掉debug样式
       debugShowCheckedModeBanner: false,
       // 整体样式
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: const Color.fromARGB(255, 255, 87, 34),
       ),
       // // 第一步：注册page（无法传递参数）
       // routes: {

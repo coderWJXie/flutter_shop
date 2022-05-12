@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_shop/pages/shop_cart_page.dart';
+import 'package:flutter_shop/pages/shop_category_page.dart';
 import 'package:flutter_shop/pages/shop_home_page.dart';
-import 'package:flutter_shop/pages/shop_login_page.dart';
 import 'package:flutter_shop/pages/shop_mine_page.dart';
 
 class AppPage extends StatefulWidget {
@@ -29,9 +31,8 @@ class _AppPageState extends State<AppPage> {
         index: _selectedIndex,
         children: const [
           HomePage(),
-          LoginPage(),
-          HomePage(),
-          HomePage(),
+          CategoryPage(),
+          CartPage(),
           MinePage()
         ],
       ),
@@ -43,74 +44,25 @@ class _AppPageState extends State<AppPage> {
         type: BottomNavigationBarType.fixed,
         selectedFontSize: 12.0,
         unselectedFontSize: 12.0,
-        selectedItemColor: Colors.pink,
-        unselectedItemColor: Colors.black,
-        items: [
+        selectedItemColor: const Color.fromARGB(255, 255, 87, 34),
+        unselectedItemColor: Colors.grey,
+        items: const [
           BottomNavigationBarItem(
             label: '首页',
-            icon: Image.asset(
-              'assets/bottomNavigationNarItem/home_normal.png',
-              width: 23,
-              height: 23
-            ),
-            activeIcon: Image.asset(
-                'assets/bottomNavigationNarItem/home_active.png',
-                width: 23,
-                height: 23
-            )
+            icon: Icon(Icons.home),
           ),
           BottomNavigationBarItem(
-              label: '9.9包邮',
-              icon: Image.asset(
-                'assets/bottomNavigationNarItem/jiujiu_normal.png',
-                width: 23,
-                height: 23
-              ),
-              activeIcon: Image.asset(
-                'assets/bottomNavigationNarItem/jiujiu_active.png',
-                width: 23,
-                height: 23
-              )
+            label: '分类',
+            icon: Icon(Icons.category),
           ),
           BottomNavigationBarItem(
-              label: '分类',
-              icon: Image.asset(
-                'assets/bottomNavigationNarItem/classify_normal.png',
-                width: 23,
-                height: 23
-              ),
-              activeIcon: Image.asset(
-                'assets/bottomNavigationNarItem/classify_active.png',
-                width: 23,
-                height: 23
-              )
+            label: '购物车',
+            icon: Icon(Icons.shopping_cart),
           ),
           BottomNavigationBarItem(
-              label: '动态',
-              icon: Image.asset(
-                'assets/bottomNavigationNarItem/dynamic_normal.png',
-                width: 23,
-                height: 23
-              ),
-              activeIcon: Image.asset(
-                'assets/bottomNavigationNarItem/dynamic_active.png',
-                width: 23,
-                height: 23
-              )
+            label: '我的',
+            icon: Icon(Icons.person),
           ),
-          BottomNavigationBarItem(
-              label: '我的',
-              icon: Image.asset(
-                  'assets/bottomNavigationNarItem/my_normal.png',
-                  width: 23,
-                  height: 23
-              ),
-              activeIcon: Image.asset(
-                'assets/bottomNavigationNarItem/my_active.png',
-                width: 23,
-                height: 23
-              )
-          )
         ],
         onTap: (index) {
           // 变量改变以后必须调用该方法才能修改界面

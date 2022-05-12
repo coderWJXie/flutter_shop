@@ -12,6 +12,6 @@ class _MinePageState extends State<MinePage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Mine');
+    return const Text('我的');
   }
 }

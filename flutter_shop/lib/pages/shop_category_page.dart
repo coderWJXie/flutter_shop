@@ -12,6 +12,6 @@ class _CategoryPageState extends State<CategoryPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('body');
+    return const Text('分类');
   }
 }

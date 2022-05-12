@@ -63,12 +63,12 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
+#  assets:
 #    # 表示xxx文件夹下xxx文件
 #    - assets/bottomNavigationNarItem/home_normal.ong
-    # 表示xxx文件夹下全部文件
-    - assets/bottomNavigationNarItem/
-    - assets/appBarItem/
+#    # 表示xxx文件夹下全部文件
+#    - assets/bottomNavigationNarItem/
+#    - assets/appBarItem/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
